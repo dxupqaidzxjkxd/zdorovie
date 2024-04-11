@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" href="pngwing.com (22).png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-************" crossorigin="anonymous" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забота о себе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			font-size: 18px; /* Увеличение размера текста */
+        }
+		     .social-icon {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+		/* Стили для пунктов меню при наведении в светлой теме */
+/* Стили для пунктов меню при наведении в темной теме */
+/* Стили для пунктов меню при наведении в светлой теме */
+.light-mode nav a:hover {
+    background-color: #e9ecef; /* Цвет фона при наведении */
+    color: #333; /* Цвет текста */
+}
+
+
+
+header {
+    background: linear-gradient(to right, #b2ffb7, #ffffff); /* Более светлый зеленый градиент */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Обрезаем контент, который выходит за границы заголовка */
+}
+/* Определение анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Начальное значение прозрачности: невидим */
+    }
+    to {
+        opacity: 1; /* Конечное значение прозрачности: полностью видим */
+    }
+}
+
+/* Применение анимации к элементу header */
+header {
+    animation: fadeIn 1s ease; /* Применяем анимацию fadeIn с продолжительностью 1 секунда и плавным переходом */
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Начинаем анимацию за пределами заголовка */
+    width: 100%; /* Увеличиваем ширину, чтобы градиент переливался за пределы заголовка */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    animation: gradientAnimation 5s linear infinite; /* Запускаем анимацию */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        left: -100%; /* Начальное положение анимации */
+    }
+    100% {
+        left: 100%; /* Конечное положение анимации */
+    }
+}
+
+
+
+        h1 {
+            position: relative;
+            z-index: 2;
+			 font-family: Gabriola;
+			 font-size: 40px;
+        }
+nav {
+    background-color: #f8f9fa; /* Цвет фона меню */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; /* Закругление углов */
+    margin-bottom: 20px; /* Отступ снизу */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругление углов */
+    position: relative; /* Добавляем позиционирование для псевдоэлемента */
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Высота подсветки */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /* Градиент */
+    border-radius: 5px 5px 0 0; /* Закругление углов только сверху */
+    transition: height 0.3s ease; /* Плавное изменение высоты */
+}
+
+nav a:hover::before {
+    height: 100%; /* Увеличиваем высоту при наведении */
+}
+
+nav a:hover {
+    background-color: #98999c; /* Цвет фона при наведении */
+}
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+		
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+    transform: translateY(-2px); /* Небольшое поднятие кнопки при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Небольшая тень при наведении */
+}
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+      footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 97.8%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #55acee; /* Цвет иконок при наведении */
+}
+
+.subscribe {
+    margin-top: 10px;
+}
+
+.subscribe h3 {
+    margin-bottom: 10px;
+}
+
+.subscribe input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.subscribe button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
+
+    .box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+			border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .info {
+            padding: 20px;
+            background-color: #f2f4f5;
+            margin-bottom: 20px;
+        }
+		.grand {
+    overflow: auto; /* Очистка потока для корректного выравнивания */
+	 margin: 0 auto; /* Отступы по горизонтали автоматически, чтобы блок был по центру */
+    max-width: 1500px; /* Максимальная ширина блока */
+    padding: 20px; /* Отступы внутри блока */
+}
+
+.grand img {
+    float: left; /* Плавающее изображение слева */
+	 border-radius: 10px;
+    margin-right: 20px; /* Отступ справа для создания пространства между текстом и изображением */
+}
+
+.grand p {
+    overflow: hidden; /* Очистка потока для корректного обтекания изображения */
+}
+.info {
+    padding: 20px;
+    background-color: #f2f4f5;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Устанавливаем радиус закругления углов */
+}
+   .image-before-header {
+        display: inline-block;
+        max-width: 100px; /* Максимальная ширина изображения */
+        margin-right: 20px; /* Отступ справа от изображения */
+        vertical-align: middle; /* Выравнивание изображения по вертикали */
+    }
+h2 {
+    animation: fadeIn 1s ease; /* Применяем анимацию fadeIn с продолжительностью 1 секунда и плавным переходом */
+}
+/* Стили для темной темы */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: linear-gradient(to right, #333, #000);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav a {
+    color: #eee;
+}
+
+.dark-mode .section-content .box {
+    border-color: #666;
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .section-content .box img {
+    border-color: #666;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+/* Стили для светлой темы */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode header {
+    background: linear-gradient(to right, #b2ffb7, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode nav {
+    background-color: #f8f9fa;
+}
+
+.light-mode nav a {
+    color: #333;
+}
+
+.light-mode .section-content .box {
+    border-color: #ccc;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.light-mode .section-content .box img {
+    border-color: #000;
+}
+
+.light-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+/* Стили для плашки в темной теме */
+.dark-mode .info {
+    background-color: #222; /* Цвет фона плашки в темной теме */
+    color: #fff; /* Цвет текста */
+}
+
+/* Стили для плашки в светлой теме */
+.light-mode .info {
+    background-color: #f2f4f5; /* Цвет фона плашки в светлой теме */
+    color: #333; /* Цвет текста */
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+<h1>
+    <img src="pngwing.com (22).png" alt="Описание изображения" class="image-before-header"> 
+    Забота о себе
+</h1>
+ <button id="darkModeButton" class="button">Темная тема</button>
+    <button id="lightModeButton" class="button">Светлая тема</button>
+        <p>Приветствуем вас на нашем сайте! Здесь вы найдете множество полезных советов и рекомендаций по уходу за кожей, волосами и общим здоровьем.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Домой</a>
+        <a href="kosja.html">Уход за кожей</a>
+        <a href="hair_care.html">Уход за волосами</a>
+        <a href="fitness.html">Здоровье и фитнес</a>
+        <a href="blog.html">Блог</a>
+        <a href="onas.html">О нас</a>
+    </nav>
+<div class="grand">
+    <h2>Что такое здоровье?</h2>
+	<div class="info">
+    <img class="detail_picture" border="0" src="123.jpeg" width="674" height="637" alt="Что такое здоровье" title="Что такое здоровье" />
+    <p style="text-align: right;"><em>Что мы замечаем, только когда теряем? </em><em> </em></p>
+    <p style="text-align: right;"><em> </em><em>Загадка</em></p>
+    <p>Что же все-таки это такое - здоровье? Как его себе представить? Есть много определений - от детского «Здоровье - это когда ничто не болит» до научного, сформулированного Всемирной организацией здравоохранения: «Здоровье - это не только отсутствие болезни и немощи, а состояние полного физического, психического и социального благополучия».</p>
+    <p>Для большинства людей здоровье - это нормальное состояние, которое мы обычно не сознаем или не обращаем на него внимание, как мы не думаем о своем дыхании, о том, как бьется сердце. Кто-то мудро сказал: «Ощущение здоровья приобретается только после перенесенной болезни». Эта его «незаметность» может явиться причиной бездумного отношения к собственному здоровью, которое оказывается губительным для многих.</p>
+    <p>Самое примитивное и распространенное понимание здоровья - это состояние организма, когда нет болезни. Даже медики нередко действуют по нему: «Нет болезни - здоров, нам с тобой нечего делать. Вот когда заболеешь, приходи». Но здоровье - это не что-то постоянное и неизменное. Оно тоже нуждается во внимании и контроле. Здоровье необходимо поддерживать и укреплять. Думаю, в будущем, когда главной заботой медицины станет предупредить болезнь, а не лечить ее, врач будет вести не «историю болезни», а «историю здоровья».</p>
+    <p>Болезни изучены до генно-молекулярного уровня, а о здоровье многие даже врачи мало что знают и не хотят им заниматься: «Не до здоровья, с болезнями нет времени и сил управиться». К тому же здоровые люди к врачам не обращаются. Поэтому врачи во все времена главным образом занимались больными и изучали болезни. Еще академик медицины Н.М. Амосов признавал: «Все врачи - специалисты по болезням, а не по здоровью». Хотя в слове «здравоохранение» главный смысл обозначен: охрана здоровья, а не лечение болезней.</p>
+    <p>Существуют международные рейтинги здоровья, которые составляются ежегодно на основании следующих показателей: продолжительность жизни, уровень детской смертности, количество потребляемых сигарет и алкоголя, физическая активность и экология. Первые три места в этом рейтинге в 2012 г. заняли Сингапур, Италия и Австралия. Россия оказалась на 97-м месте в списке из 145 стран и регионов.</p>
+    <p>В одном из журналов была опубликована любопытная табличка, показывавшая результаты международного опроса сопоставимых по возрасту и социальному статусу групп лиц из разных стран Европы. Всем опрашиваемым предлагали дать оценку своего здоровья. Детали и условия опроса не сообщались, поэтому трудно судить об их объективности, но по представленным результатам доля людей, оценивающих свое здоровье как хорошее, составила в разных странах:</p>
+    <ul>
+        <li><p>Норвегия – 81 %,</p></li>
+        <li><p>Нидерланды –78 %,</p></li>
+        <li><p>Финляндия – 69 %,</p></li>
+        <li><p>Италия – 62 %,</p></li>
+        <li><p>Португалия – 41 %,</p></li>
+        <li><p>Латвия – 29 %,</p></li>
+        <li><p>Россия – 22 %,</p></li>
+        <li><p>Украина – 8 %.</p></li>
+    </ul>
+    <p>Думаю, эти цифры отражают определенные различия между людьми разных стран как в состоянии здоровья, так и в понимании того, что это означает, а также различия в культуре здоровья и образе жизни.</p>
+    <p>Печальные данные были получены при недавней диспансеризации (профилактических обследованиях) населения России, которой было охвачено около 17 млн человек. Результаты показали, что практически здоровы только чуть больше 30 % обследованных лиц.</p>
+    <p>Сегодня на основании обобщения многочисленных исследований в области эпидемиологии и этиологии большинства заболеваний человека можно утверждать, что более 80 % возможностей сохранить здоровье зависит от вашей собственной воли и поведения, 15 - от общества и окружающей среды, в которых вы живете, и только 5 % - от врача. Поэтому сохранение здоровья должно обеспечиваться в первую очередь собственными знаниями и усилиями, роль врачей здесь второстепенна. И еще очень важно понимать, что данное нам от природы, от рождения здоровье законсервировать нельзя, его нужно развивать и поддерживать постоянно. Отсутствие внимания к нему и заботы о нем - одна из наиболее частых начальных причин многих болезней.</p>
+    <p>И еще одна важная закономерность: многие болезни и недуги пожилого возраста зарождаются в молодости. На начальных этапах, в течение 10-30 лет они могут протекать без заметных симптомов, неудобств и ощущений (атеросклероз, многие опухоли и др.). В то же время при внимании к своему здоровью их можно было бы своевременно предупредить или остановить их развитие.</p>
+</div>   
+
+   <p><em> </em><em>Чтобы улучшить свое здоровье можете ознакомиться с другими окнами сайта:</em><em> </em></p>
+    <div style="clear:both"></div>
+    <br />
+
+</div>
+
+    <section>
+        <div class="section-content">
+            <div class="box">
+			
+                <img src="skin_care.jpg" alt="Уход за кожей">
+                <p>Уход за кожей</p>
+                <a href="kosja.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="hair_care.jfif" alt="Уход за волосами">
+                <p>Уход за волосами</p>
+                <a href="hair_care.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="fitness.jpg" alt="Здоровье и фитнес">
+                <p>Здоровье и фитнес</p>
+                <a href="fitness.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="blog.jpg" alt="Блог">
+                <p>Блог</p>
+                <a href="blog.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="pngwing.com (20).png" alt="О нас">
+                <p>О нас</p>
+                <a href="onas.html" class="button">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+<footer>
+    <div class="footer-content">
+        &copy; 2024 Забота о себе
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="subscribe">
+            <h3>Подписаться на обновления</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+	
+	    <script>
+// Получаем кнопки переключения темы и элементы с классом .info
+const darkModeButton = document.getElementById('darkModeButton');
+const lightModeButton = document.getElementById('lightModeButton');
+const body = document.body;
+const infoElements = document.querySelectorAll('.info');
+
+// Функция для установки темы
+function setTheme(theme) {
+    body.classList.remove('dark-mode', 'light-mode');
+    body.classList.add(theme);
+    // Применяем тему ко всем элементам с классом .info
+    infoElements.forEach(element => {
+        element.classList.remove('dark-mode', 'light-mode');
+        element.classList.add(theme);
+    });
+}
+
+// Функция для сохранения выбранной темы в localStorage
+function saveThemeToLocalStorage(theme) {
+    localStorage.setItem('theme', theme);
+}
+
+// Функция для загрузки темы из localStorage при загрузке страницы
+function loadThemeFromLocalStorage() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark-mode') {
+        setTheme('dark-mode');
+    } else {
+        setTheme('light-mode');
+    }
+}
+
+// Добавляем обработчики для кнопок переключения темы
+darkModeButton.addEventListener('click', () => {
+    setTheme('dark-mode');
+    saveThemeToLocalStorage('dark-mode');
+});
+
+lightModeButton.addEventListener('click', () => {
+    setTheme('light-mode');
+    saveThemeToLocalStorage('light-mode');
+});
+
+// Загружаем тему из localStorage при загрузке страницы
+loadThemeFromLocalStorage();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" href="pngwing.com (22).png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забота о себе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			font-size: 18px; /* Увеличение размера текста */
+        }
+      header {
+    background: linear-gradient(to right, #b2ffb7, #ffffff); /* Более светлый зеленый градиент */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Обрезаем контент, который выходит за границы заголовка */
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Начинаем анимацию за пределами заголовка */
+    width: 100%; /* Увеличиваем ширину, чтобы градиент переливался за пределы заголовка */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    animation: gradientAnimation 5s linear infinite; /* Запускаем анимацию */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        left: -100%; /* Начальное положение анимации */
+    }
+    100% {
+        left: 100%; /* Конечное положение анимации */
+    }
+}
+        h1 {
+            position: relative;
+            z-index: 2;
+			 font-family: Gabriola;
+			 font-size: 40px;
+        }
+nav {
+    background-color: #f8f9fa; /* Цвет фона меню */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; /* Закругление углов */
+    margin-bottom: 20px; /* Отступ снизу */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругление углов */
+    position: relative; /* Добавляем позиционирование для псевдоэлемента */
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Высота подсветки */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)); /* Градиент */
+    border-radius: 5px 5px 0 0; /* Закругление углов только сверху */
+    transition: height 0.3s ease; /* Плавное изменение высоты */
+}
+
+nav a:hover::before {
+    height: 100%; /* Увеличиваем высоту при наведении */
+}
+
+nav a:hover {
+    background-color: #98999c; /* Цвет фона при наведении */
+}
+    .box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+			border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+nav a:hover {
+    background-color: #e9ecef; /* Цвет фона при наведении */
+}
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+    transform: translateY(-2px); /* Небольшое поднятие кнопки при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Небольшая тень при наведении */
+}
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 97.8%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #55acee; /* Цвет иконок при наведении */
+}
+
+.subscribe {
+    margin-top: 10px;
+}
+
+.subscribe h3 {
+    margin-bottom: 10px;
+}
+
+.subscribe input[type="email"] {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.subscribe button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: #45a049; /* Цвет кнопки при наведении */
+}
+        .box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .info {
+            padding: 20px;
+            background-color: #f3f3f3;
+            margin-bottom: 20px;
+        }
+		.grand {
+    overflow: auto; /* Очистка потока для корректного выравнивания */
+	 margin: 0 auto; /* Отступы по горизонтали автоматически, чтобы блок был по центру */
+    max-width: 1500px; /* Максимальная ширина блока */
+    padding: 20px; /* Отступы внутри блока */
+}
+
+.grand img {
+    float: left; /* Плавающее изображение слева */
+	border-radius: 10px;
+    margin-right: 20px; /* Отступ справа для создания пространства между текстом и изображением */
+}
+
+.grand p {
+    overflow: hidden; /* Очистка потока для корректного обтекания изображения */
+}
+.info {
+    padding: 20px;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Устанавливаем радиус закругления углов */
+}
+   .image-before-header {
+        display: inline-block;
+        max-width: 100px; /* Максимальная ширина изображения */
+        margin-right: 20px; /* Отступ справа от изображения */
+        vertical-align: middle; /* Выравнивание изображения по вертикали */
+    }
+	/* Определение анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Начальное значение прозрачности: невидим */
+    }
+    to {
+        opacity: 1; /* Конечное значение прозрачности: полностью видим */
+    }
+}
+
+/* Применение анимации к элементу header */
+header {
+    animation: fadeIn 1s ease; /* Применяем анимацию fadeIn с продолжительностью 1 секунда и плавным переходом */
+}
+h2 {
+    animation: fadeIn 1s ease; /* Применяем анимацию fadeIn с продолжительностью 1 секунда и плавным переходом */
+}
+/* Стили для темной темы */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: linear-gradient(to right, #333, #000);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode nav a {
+    color: #eee;
+}
+
+.dark-mode .section-content .box {
+    border-color: #666;
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .section-content .box img {
+    border-color: #666;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+/* Стили для светлой темы */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode header {
+    background: linear-gradient(to right, #b2ffb7, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode nav {
+    background-color: #f8f9fa;
+}
+
+.light-mode nav a {
+    color: #333;
+}
+
+
+.light-mode .section-content .box {
+    border-color: #ccc;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.light-mode .section-content .box img {
+    border-color: #000;
+}
+
+.light-mode footer {
+    background-color: #333;
+    color: #fff;
+}
+/* Стили для плашки в темной теме */
+.dark-mode .info {
+    background-color: #222; /* Цвет фона плашки в темной теме */
+    color: #fff; /* Цвет текста */
+}
+
+/* Стили для плашки в светлой теме */
+.light-mode .info {
+    background-color: #f2f4f5; /* Цвет фона плашки в светлой теме */
+    color: #333; /* Цвет текста */
+}
+/* Стили для пунктов меню при наведении в темной теме */
+.dark-mode nav a:hover {
+    background-color: #333; /* Цвет фона при наведении */
+    color: #eee; /* Цвет текста */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+<h1>
+    <img src="pngwing.com (22).png" alt="Описание изображения" class="image-before-header"> 
+    Забота о себе
+</h1>
+ <button id="darkModeButton" class="button">Темная тема</button>
+    <button id="lightModeButton" class="button">Светлая тема</button>
+        <p>Уход за кожей</p>
+    </header>
+    <nav>
+        <a href="index.html">Домой</a>
+        <a href="kosja.html">Уход за кожей</a>
+        <a href="hair_care.html">Уход за волосами</a>
+        <a href="fitness.html">Здоровье и фитнес</a>
+        <a href="blog.html">Блог</a>
+        <a href="onas.html">О нас</a>
+    </nav>
+<div class="grand">
+    <h2>Этапы ухода за лицом: основные стадии</h2>
+	<div class="info">
+    <img class="detail_picture" border="0" src="436ff517b08ec62e.webp" width="674" height="637" alt="Что такое здоровье" title="Что такое здоровье" />
+	<p><strong>Важность домашнего ухода за кожей лиц</strong></p>
+    <p>Кожа лица — отражение состояния всего организма. Ежедневный уход за кожей необходим, чтобы сохранить ее здоровой и сияющей.</p>
+    <p>Зачем нужен домашний уход за лицом? Издание Marie Claire отмечает, что домашний уход помогает сохранить здоровье, красоту и молодость, позволяет бороться с обезвоживанием, гиперпигментацией, первыми признаками старения кожи и появлением мимических морщин. Какие есть этапы ухода за лицом? Уход за кожей состоит из нескольких этапов: демакияж, очищение, тонизирование, увлажнение, питание, восстановление и защита.</p>
+<p><strong>Демакияж</strong></p>  
+  <p>Самое примитивное и распространенное понимание здоровья - это состояние организма, когда нет болезни. Даже медики нередко действуют по нему: «Нет болезни - здоров, нам с тобой нечего делать. Вот когда заболеешь, приходи». Но здоровье - это не что-то постоянное и неизменное. Оно тоже нуждается во внимании и контроле. Здоровье необходимо поддерживать и укреплять. Думаю, в будущем, когда главной заботой медицины станет предупредить болезнь, а не лечить ее, врач будет вести не «историю болезни», а «историю здоровья».</p>
+    <p>Как правильно очищать лицо? Эксперт в сфере укрепления здоровья Урви Далал рекомендует при снятии макияжа удалить косметику с губ, а затем перейти к глазам. Кожа вокруг глаз очень тонкая и нежная, поэтому будьте очень осторожны и не трите глаза. Для достижения наилучших результатов смочите ватный диск в средстве для снятия макияжа и приложите его к глазам на несколько секунд. Это смягчит и ослабит макияж, после чего его можно нежно стереть. Журнал Vogue рекомендует использовать для демакияжа такие средства:</p><br>
+ <ul>
+        <li><p>салфетки для снятия макияж; </p></li>
+        <li><p>мицеллярную воду; </p></li>
+        <li><p>гидрофильное масло; </p></li>
+        <li><p>гидрофильное масло; </p></li>
+        <li><p>двухфазное средство для снятия макияжа.</p></li>
+    </ul>
+    <p>Последним шагом станет снятие основы. Нанесите средство для демакияжа на все лицо, затем снимите его с помощью ватного диска, после чего умойтесь.</p></div>
+	
+    <h2>Уход за мужской кожей</h2>
+	<div class="info">
+	<img class="detail_picture" border="0" src="unnamed.jpg" width="674" height="637" alt="Что такое здоровье" title="Что такое здоровье" />
+    <p>Наша кожа нуждается в уходе вне зависимости от пола, но в большинстве случаев у женщин гораздо больше косметических средств: всевозможные кремы, гели и сыворотки окружают на полочке в ванной одинокий мужской лосьон после бритья. И хотя кожа мужчин не так подвержена сухости и потере упругости, базовый уход ей все же необходим. Из чего он должен состоять?</p>
+    <p><strong>Отличия мужской и женской кожи</strong></p>
+	<p>В детстве кожа мальчиков и девочек не имеет отличий, но с наступлением периода полового созревания в игру вступает гормон тестостерон, который меняет мужскую кожу и наделяет ее особыми свойствами. Чем же мужская кожа отличается от женской?</p>
+	<p>1.       Плотность. Кожа мужчин примерно на 20% толще женской, кроме того, в ее клетках содержится больше коллагена – белка, отвечающего за прочность, упругость и эластичность. Поэтому морщины на мужской коже появляются позже, чем у женщин.</p>
+	<p>2.       Жирность. Поры на коже мужчин шире, а сальные железы работают активнее, в связи с чем мужчины реже страдают от сухости кожи, но вот факторов, провоцирующих акне, в этом случае гораздо больше.</p>
+	<p>3.       Чувствительность. Регулярное бритье раздражает кожу. Сбривая волоски, бритва задевает верхний слой эпидермиса, нарушая его и делая чувствительнее.</p>
+	<p>Выбирая косметику, вовсе не обязательно искать продукт с пометкой «для мужчин». Большинство средств подходят как женщинам, так и мужчинам и подбираются в зависимости от типа кожи и ее потребностей. Если вы сомневаетесь, подобрать подходящие средства поможет косметолог.</p>
+	<p><strong>Базовый уход за мужской кожей</strong></p>
+	<p>Мужчины меньше времени проводят перед зеркалом, поэтому мужской уход должен быть простым, быстрым и эффективным. </p>
+	<p>1.    Очищение. Как мы уже говорили, мужская кожа более жирная, излишки себума смешиваются с частичками пыли и грязи, забивают поры и провоцируют активное размножение бактерий, в результате появляются черные точки и прыщи.</p>
+	<p>2.    Отшелушивание. Этим этапом ухода часто пренебрегают, но он очень важен для мужской кожи. Освобождать кожу от отмерших клеток необходимо, чтобы стимулировать естественные процессы обновления и глубоко очищать поры. Использовать скраб достаточно 1-2 раз в неделю. </p>
+	<p>3.    Увлажнение.  Не только сухой, раздраженной коже необходимо увлажнение, но и жирной, ведь именно из-за недостатка влаги, себум выделяется активнее. Наносить увлажняющий крем следует ежедневно утром и вечером после очищения.</p>
+	<p>4.    Уход за кожей губ. Кожа губ тонкая и быстро теряет влагу, поэтому из-за неблагоприятных погодных условий она грубеет и трескается. Бальзамы для ухода за кожей губ из аптеки не имеют цвета и запаха, они хорошо увлажняют, заживляют и защищают от повреждений. Использовать их можно по мере необходимости. </p>
+	<p>Если основные этапы уход за кожей стали таким же привычным, как бритье, то можно смело добавлять дополнительные шаги, например, сыворотки или маски для лица. </p>
+  </div>
+  <p><em> </em><em>Чтобы улучшить свое здоровье можете ознакомиться с другими окнами сайта:</em><em> </em></p>
+    <div style="clear:both"></div>
+    <br />
+</div>
+
+    <section>
+        <div class="section-content">
+            <div class="box">
+			
+                <img src="skin_care.jpg" alt="Уход за кожей">
+                <p>Уход за кожей</p>
+                <a href="kosja.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="hair_care.jfif" alt="Уход за волосами">
+                <p>Уход за волосами</p>
+                <a href="hair_care.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="fitness.jpg" alt="Здоровье и фитнес">
+                <p>Здоровье и фитнес</p>
+                <a href="fitness.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="blog.jpg" alt="Блог">
+                <p>Блог</p>
+                <a href="blog.html" class="button">Узнать больше</a>
+            </div>
+            <div class="box">
+                <img src="pngwing.com (20).png" alt="О нас">
+                <p>О нас</p>
+                <a href="onas.html" class="button">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+  <footer>
+    <div class="footer-content">
+        &copy; 2024 Забота о себе
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="subscribe">
+            <h3>Подписаться на обновления</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</footer>
+	
+<script>
+// Получаем кнопки переключения темы и элементы с классом .info
+const darkModeButton = document.getElementById('darkModeButton');
+const lightModeButton = document.getElementById('lightModeButton');
+const body = document.body;
+const infoElements = document.querySelectorAll('.info');
+
+// Функция для установки темы
+function setTheme(theme) {
+    body.classList.remove('dark-mode', 'light-mode');
+    body.classList.add(theme);
+    // Применяем тему ко всем элементам с классом .info
+    infoElements.forEach(element => {
+        element.classList.remove('dark-mode', 'light-mode');
+        element.classList.add(theme);
+    });
+}
+
+// Функция для сохранения выбранной темы в localStorage
+function saveThemeToLocalStorage(theme) {
+    localStorage.setItem('theme', theme);
+}
+
+// Функция для загрузки темы из localStorage при загрузке страницы
+function loadThemeFromLocalStorage() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark-mode') {
+        setTheme('dark-mode');
+    } else {
+        setTheme('light-mode');
+    }
+}
+
+// Добавляем обработчики для кнопок переключения темы
+darkModeButton.addEventListener('click', () => {
+    setTheme('dark-mode');
+    saveThemeToLocalStorage('dark-mode');
+});
+
+lightModeButton.addEventListener('click', () => {
+    setTheme('light-mode');
+    saveThemeToLocalStorage('light-mode');
+});
+
+// Загружаем тему из localStorage при загрузке страницы
+loadThemeFromLocalStorage();
+
+</script>
+
+</body>
+</html>
